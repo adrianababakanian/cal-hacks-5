@@ -1,7 +1,11 @@
+@font-face {
+  font-family: Abadi;
+  src: url("./fonts/abadi.ttf"); }
 body {
   display: flex;
   justify-content: center;
-  background: #D0E7F3;
+  color: #3B9BC2;
+  background: #A8D9F1;
   height: 2000px;
   font-family: Lato; }
   body .header {
@@ -30,7 +34,7 @@ body {
       align-items: center;
       justify-content: flex-end; }
       body .header .nav .nav-item {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 800;
         color: #3B9BC2;
         line-height: 32px;
@@ -39,7 +43,7 @@ body {
         cursor: pointer;
         transition: background 0.2s ease-in-out; }
         body .header .nav .nav-item:hover {
-          background: #A3DAEC;
+          background: #80C8DF;
           color: #218BB6; }
         @media (max-width: 800px) {
           body .header .nav .nav-item {
@@ -61,7 +65,52 @@ body {
   body .container {
     width: 800px;
     margin: 60px 0; }
-    body .container .hello {
-      word-spacing: 400px; }
+    body .container .title {
+      width: 400px;
+      margin: 130px 0 0 80px; }
+      body .container .title .main {
+        margin: 0; }
+      body .container .title .sub {
+        margin: 10px 0 0 40px;
+        font-weight: 600;
+        padding: 0; }
+      body .container .title .apply {
+        font-family: Nunito Sans;
+        font-weight: 600;
+        width: 275px;
+        height: 48px;
+        text-align: center;
+        font-size: 24px;
+        color: #A8D9F1;
+        line-height: 46px;
+        background: #3B9BC2;
+        border-radius: 6px;
+        margin: 20px 0 0 80px; }
+    body .container h1 {
+      font-size: 60px;
+      font-family: Nunito Sans;
+      font-weight: 800;
+      line-height: 60px; }
+    body .container h2 {
+      font-family: Nunito Sans;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 30px;
+      max-width: 400px;
+      padding: 0 80px; }
+    body .container p {
+      font-family: Muli;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25px;
+      max-width: 475px;
+      padding: 0 80px; }
+  body .node-1 {
+    width: 175px;
+    height: auto;
+    transform: translate(-45px, -165px); }
+    body .node-1 img {
+      width: 100%;
+      height: auto; }
 
 /*# sourceMappingURL=style.css.map */

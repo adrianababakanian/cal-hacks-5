@@ -1,5 +1,5 @@
 $colors: (
-  background: #D0E7F3,
+  background: #A8D9F1, //#D0E7F3,
   cornflower: #97D0ED,
   french: #80C8DF,
   french_trans: #A3DAEC,
@@ -11,9 +11,15 @@ $colors: (
   @return #{map-get($colors, $color)};
 }
 
+@font-face {
+  font-family: Abadi;
+  src: url('./fonts/abadi.ttf');
+}
+
 body {
   display: flex;
   justify-content: center;
+  color: get(oasis);
   background: get(background);
   height: 2000px;
   font-family: Lato;
@@ -27,6 +33,7 @@ body {
     display: flex;
     align-items: center;
     padding: 8px 20px;
+    // box-shadow: 0px 12px 30px 0px rgba(66,68,84,0.11);
 
     .home {
       height: 46px;
@@ -49,7 +56,7 @@ body {
       justify-content: flex-end;
 
       .nav-item {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 800;
         color: get(oasis);
         line-height: 32px;
@@ -59,16 +66,13 @@ body {
         transition: background 0.2s ease-in-out;
 
         &:hover {
-          background: get(french_trans);
+          background: get(french);
           color: get(lazuli);
         }
 
         @media (max-width: 800px) {
           display: none;
-
-          &.apply {
-            display: block;
-          }
+          &.apply { display: block; }
         }
 
         &.apply {
@@ -96,8 +100,59 @@ body {
     width: 800px;
     margin: 60px 0;
 
-    .hello {
-      word-spacing: 400px;
+    .title {
+      width: 400px;
+      margin: 130px 0 0 80px;
+      .main { margin: 0; }
+      .sub { margin: 10px 0 0 40px; font-weight: 600; padding: 0; }
+      .apply {
+        font-family: Nunito Sans;
+        font-weight: 600;
+        width: 275px;
+        height: 48px;
+        text-align: center;
+        font-size: 24px;
+        color: get(background);
+        line-height: 46px;
+        background: get(oasis);
+        border-radius: 6px;
+        margin: 20px 0 0 80px;
+      }
+    }
+
+    h1 {
+      font-size: 60px;
+      font-family: Nunito Sans;
+      font-weight: 800;
+      line-height: 60px;
+    }
+
+    h2 {
+      font-family: Muli;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 30px;
+      max-width: 400px;
+      padding: 0 80px;
+    }
+
+    p {
+      font-family: Muli;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25px;
+      max-width: 475px;
+      padding: 0 80px;
+    }
+  }
+
+  .node-1 {
+    width: 175px;
+    height: auto;
+    transform: translate(-45px, -165px);
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 
