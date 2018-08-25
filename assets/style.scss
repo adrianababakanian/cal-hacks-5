@@ -1,0 +1,104 @@
+$colors: (
+  background: #D0E7F3,
+  cornflower: #97D0ED,
+  french: #80C8DF,
+  french_trans: #A3DAEC,
+  lazuli: #218BB6,
+  oasis: #3B9BC2
+);
+
+@function get($color) {
+  @return #{map-get($colors, $color)};
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: get(background);
+  height: 2000px;
+  font-family: Lato;
+
+  .header {
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    position: fixed;
+    top: 20px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+
+    .home {
+      height: 46px;
+      width: auto;
+      position: absolute;
+      left: 20px;
+      img {
+        position: absolute;
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .nav {
+      position: absolute;
+      right: 20px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .nav-item {
+        font-size: 16px;
+        font-weight: 800;
+        color: get(oasis);
+        line-height: 32px;
+        padding: 0 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.2s ease-in-out;
+
+        &:hover {
+          background: get(french_trans);
+          color: get(lazuli);
+        }
+
+        @media (max-width: 800px) {
+          display: none;
+
+          &.apply {
+            display: block;
+          }
+        }
+
+        &.apply {
+          font-size: 16px;
+          line-height: 36px;
+          background: get(french);
+          border-radius: 6px;
+          border: 3px solid get(oasis);
+          padding: 0 30px;
+          margin: 0 0 0 15px;
+
+          &:hover {
+            background: get(oasis);
+            border-color: get(lazuli);
+            color: get(cornflower);
+          }
+        }
+      }
+    }
+
+  }
+
+
+  .container {
+    width: 800px;
+    margin: 60px 0;
+
+    .hello {
+      word-spacing: 400px;
+    }
+  }
+
+}
