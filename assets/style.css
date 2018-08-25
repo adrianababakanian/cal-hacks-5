@@ -85,14 +85,15 @@ body {
             color: #97D0ED;
             box-shadow: 2px 2px 30px 2px #218BB6; }
   body .container {
-    width: 800px;
+    width: 1000px;
     margin: 60px 0;
     position: relative; }
     body .container .section {
-      padding-top: 70px; }
+      padding-top: 70px;
+      position: relative; }
     body .container .title {
       width: 400px;
-      margin: 130px 0 0 80px; }
+      margin: 130px 0 0 140px; }
       body .container .title .main {
         margin: 0; }
       body .container .title .sub {
@@ -128,18 +129,19 @@ body {
       font-weight: 800;
       line-height: 30px;
       max-width: 400px;
-      padding: 0 80px; }
+      padding: 0 180px; }
     body .container p {
       font-family: Muli;
       font-size: 18px;
       font-weight: 400;
       line-height: 25px;
       max-width: 475px;
-      padding: 0 80px; }
+      padding: 0 180px; }
   body .node-1 {
     width: 175px;
     height: auto;
-    transform: translate(-45px, -165px); }
+    position: absolute;
+    top: 295px; }
     body .node-1 img {
       width: 100%;
       height: auto; }
@@ -155,7 +157,9 @@ body {
   body .node-3 {
     width: 103px;
     height: auto;
-    transform: translate(30px, -140px); }
+    position: absolute;
+    top: 320px;
+    left: 130px; }
     body .node-3 img {
       width: 100%;
       height: auto; }
