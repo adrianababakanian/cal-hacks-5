@@ -90,10 +90,19 @@ body {
     position: relative; }
     body .container .section {
       padding-top: 70px;
-      position: relative; }
+      position: relative;
+      height: auto;
+      display: table;
+      width: 100%; }
+    body .container .buffer {
+      width: 100%;
+      height: 130px;
+      background: #A8D9F1; }
     body .container .title {
+      position: relative;
       width: 400px;
-      margin: 130px 0 0 140px; }
+      margin-left: 140px;
+      float: left; }
       body .container .title .main {
         margin: 0; }
       body .container .title .sub {
@@ -148,12 +157,17 @@ body {
   body .node-2 {
     width: 100px;
     height: auto;
-    right: 220px;
-    top: 110px;
+    right: 360px;
+    top: 180px;
     position: absolute; }
-    body .node-2 img {
-      width: 100%;
-      height: auto; }
+  body img {
+    width: 100%;
+    height: auto; }
+  body .ddoski {
+    float: right;
+    width: 148px;
+    height: auto;
+    margin-right: 200px; }
   body .node-3 {
     width: 103px;
     height: auto;

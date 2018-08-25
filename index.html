@@ -5,29 +5,13 @@
   <link rel='stylesheet' href='./assets/style.css'>
   <link href='https://fonts.googleapis.com/css?family=Lato|Nunito+Sans:600,800' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-
-      if (scroll > 0) {
-          $(".header").addClass("lift");
-      } else {
-          $(".header").removeClass("lift");
-      }
-    });
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-              behavior: 'smooth'
-          });
-      });
-    });
-  </script>
+  <script src='./assets/index.js'></script>
 </head>
 <body>
+
+  <!-- Navigation bar. -->
   <div class='header'>
+
     <div class='header-container'>
       <div class='home'><img src='./assets/images/home.png'></div>
       <div class='nav'>
@@ -38,18 +22,26 @@
         <div class='nav-item apply'>Apply</div>
       </div>
     </div>
+
   </div>
 
+  <!-- Main content. -->
   <div class='container'>
-    <div class='section title'>
-      <h1 class='main'> It's time for round 5.0 </h1>
-      <h2 class='sub'> November 2-4, 2018 <br/> California Memorial Stadium </h2>
-      <div class='apply'> Apply now </div>
-    </div>
-    <div class='node-1'><img src='./assets/images/node-1.svg'/></div>
-    <div class='node-2'><img src='./assets/images/node-2.svg'/></div>
 
-    <!-- About -->
+    <!-- Title. -->
+    <div class='section'>
+      <div class='buffer'></div>
+      <div class='title'>
+        <h1 class='main'> It's time for round 5.0 </h1>
+        <h2 class='sub'> November 2-4, 2018 <br/> California Memorial Stadium </h2>
+        <div class='apply'> Apply now </div>
+      </div>
+      <div class='ddoski'><img src='./assets/images/ddoski.png'/></div>
+      <div class='node-1'><img src='./assets/images/node-1.svg'/></div>
+      <div class='node-2'><img src='./assets/images/node-2.svg'/></div>
+    </div>
+
+    <!-- About. -->
     <div class='section' id='about'>
       <h2> The world's largest collegiate hackathon is back! </h2>
       <p>
@@ -60,18 +52,13 @@
       <div class='node-3'><img src='./assets/images/node-3.svg'/></div>
     </div>
 
+    <!-- Speakers. -->
     <div class='section' id='speakers'>
       <h2> Speakers </h2>
       <p>
         Leaders, mentors, sponsors, and other infulential members of the tech community come to Cal Hacks to interact and inspire. Stay tuned for this year’s speakers and judges!
       </p>
     </div>
-
-    <!-- Speakers -->
-    <h2> Speakers </h2>
-    <p>
-      Leaders, mentors, sponsors, and other infulential members of the tech community come to Cal Hacks to interact and inspire. Stay tuned for this year’s speakers and judges!
-    </p>
 
   </div>
 
