@@ -4,16 +4,39 @@
   <title>Cal Hacks 5.0</title>
   <link rel='stylesheet' href='./assets/style.css'>
   <link href='https://fonts.googleapis.com/css?family=Lato|Nunito+Sans:600,800' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+
+      if (scroll > 0) {
+          $(".header").addClass("lift");
+      } else {
+          $(".header").removeClass("lift");
+      }
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+    });
+  </script>
 </head>
 <body>
   <div class='header'>
-    <div class='home'><img src='./assets/images/home.png'></div>
-    <div class='nav'>
-      <div class='nav-item'>About</div>
-      <div class='nav-item'>Speakers</div>
-      <div class='nav-item'>Sponsor</div>
-      <div class='nav-item'>FAQ</div>
-      <div class='nav-item apply'>Apply</div>
+    <div class='header-container'>
+      <div class='home'><img src='./assets/images/home.png'></div>
+      <div class='nav'>
+        <a href='#about' class='nav-item'>About</a>
+        <a href='#speakers' class='nav-item'>Speakers</a>
+        <a href='#sponsor' class='nav-item'>Sponsor</a>
+        <a href='#faq' class='nav-item'>FAQ</a>
+        <div class='nav-item apply'>Apply</div>
+      </div>
     </div>
   </div>
 
@@ -23,15 +46,27 @@
       <h2 class='sub'> November 2-4, 2018 <br/> California Memorial Stadium </h2>
       <div class='apply'> Apply now </div>
     </div>
-    <div class='node-1'><img src='./assets/images/node-1.png'/></div>
+    <div class='node-1'><img src='./assets/images/node-1.svg'/></div>
+    <div class='node-2'><img src='./assets/images/node-2.svg'/></div>
 
     <!-- About -->
-    <h2> The world's largest collegiate hackathon is back! </h2>
-    <p>
-      Last fall, Cal Hacks brought together 2,200 attendees from 50 universities and 5 countries to build everything from mind-controlled vehicles to artificial intelligence for language learning.
-      <br/><br/>
-      For Cal Hacks 5.0, we’re building on our tradition of technical & inclusive excellence by bringing together the world’s brightest collegiate hackers and guiding them in creating impactful, diverse, & innovative projects.
-    </p>
+    <div class='section' id='about'>
+      <h2> The world's largest collegiate hackathon is back! </h2>
+      <p>
+        Last fall, Cal Hacks brought together 2,200 attendees from 50 universities and 5 countries to build everything from mind-controlled vehicles to artificial intelligence for language learning.
+        <br/><br/>
+        For Cal Hacks 5.0, we’re building on our tradition of technical & inclusive excellence by bringing together the world’s brightest collegiate hackers and guiding them in creating impactful, diverse, & innovative projects.
+      </p>
+    </div>
+
+    <div class='node-3'><img src='./assets/images/node-3.svg'/></div>
+
+    <div class='section' id='speakers'>
+      <h2> Speakers </h2>
+      <p>
+        Leaders, mentors, sponsors, and other infulential members of the tech community come to Cal Hacks to interact and inspire. Stay tuned for this year’s speakers and judges!
+      </p>
+    </div>
 
     <!-- Speakers -->
     <h2> Speakers </h2>
