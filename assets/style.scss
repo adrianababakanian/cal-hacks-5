@@ -125,15 +125,14 @@ body {
         &.apply {
           font-size: 16px;
           line-height: 36px;
-          background: get(french);
+          background: get(oasis);
+          color: get(background);
           border-radius: 6px;
-          border: 3px solid get(oasis);
           padding: 0 30px;
           margin: 0 0 0 15px;
 
           &:hover {
-            background: get(oasis);
-            border-color: get(lazuli);
+            background: get(lazuli);
             color: get(cornflower);
           }
         }
@@ -157,7 +156,13 @@ body {
       height: auto;
       display: table;
       width: calc(100% - 66px);
-      @media (max-width: 820px) { padding: 0; width: calc(100%) }
+      @media (max-width: 820px) {
+        padding: 0; width: calc(100%);
+
+        &#home {
+          padding: 40px 0;
+        }
+      }
     }
 
     .buffer {
@@ -213,7 +218,7 @@ body {
         height: 48px;
         text-align: center;
         font-size: 24px;
-        color: get(dark_dust);
+        color: get(background);
         line-height: 46px;
         background: get(oasis);
         border-radius: 6px;
@@ -367,7 +372,7 @@ body {
   .node-4 {
     width: 248px;
     top: 0;
-    right: 100px;
+    right: 40px;
 
     @media (max-width: 1050px) {
       right: 0;
