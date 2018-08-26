@@ -317,6 +317,37 @@ body {
     p {
       max-width: 600px;
     }
+
+    .logo-grid {
+      margin: 0 auto;
+      position: relative;
+      width: 80%;
+      max-width: 680px;
+      height: 500px;
+      transform: translate(-20px, 0);
+
+      .row {
+        position: relative;
+      }
+
+      .column {
+        width: calc(25% - 36px);
+        max-width: calc(25% - 36px);
+        padding: 12px 18px;
+        float: left;
+
+        img {
+          transition: opacity 0.3s ease-in-out;
+          padding: 16px 8px;
+          width: 100%;
+          height: auto;
+          opacity: 0.7;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
   }
 
   .faq-content {

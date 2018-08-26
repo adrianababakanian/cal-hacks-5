@@ -228,6 +228,28 @@ body {
     border-radius: 8px; }
     body #sponsor p, body #faq p {
       max-width: 600px; }
+    body #sponsor .logo-grid, body #faq .logo-grid {
+      margin: 0 auto;
+      position: relative;
+      width: 80%;
+      max-width: 680px;
+      height: 500px;
+      transform: translate(-20px, 0); }
+      body #sponsor .logo-grid .row, body #faq .logo-grid .row {
+        position: relative; }
+      body #sponsor .logo-grid .column, body #faq .logo-grid .column {
+        width: calc(25% - 36px);
+        max-width: calc(25% - 36px);
+        padding: 12px 18px;
+        float: left; }
+        body #sponsor .logo-grid .column img, body #faq .logo-grid .column img {
+          transition: opacity 0.3s ease-in-out;
+          padding: 16px 8px;
+          width: 100%;
+          height: auto;
+          opacity: 0.7; }
+          body #sponsor .logo-grid .column img:hover, body #faq .logo-grid .column img:hover {
+            opacity: 1; }
   body .faq-content {
     position: relative;
     margin: 0 auto;
