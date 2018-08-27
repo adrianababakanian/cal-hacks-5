@@ -8,7 +8,7 @@ $(window).scroll(function() {
   }
 });
 
-function showMobileNav() {
+function toggleMobileNav() {
     var x = document.getElementById("mobile-nav");
     console.log('hello');
     if (x.className === "mobile-nav") {

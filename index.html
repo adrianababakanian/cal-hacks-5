@@ -40,7 +40,7 @@
         <a href='#speakers' class='nav-item'>Speakers</a>
         <a href='#sponsor' class='nav-item'>Sponsor</a>
         <a href='#faq' class='nav-item'>FAQ</a>
-        <a href="javascript:void(0);" id='hamburger' class="icon" onclick="showMobileNav()">
+        <a href="javascript:void(0);" id='hamburger' class="icon" onclick="toggleMobileNav()">
           <i class="fa fa-bars stretch"></i>
         </a>
         <div class='nav-item apply'>Apply</div>
@@ -50,10 +50,15 @@
   </div>
 
   <div class='mobile-nav' id='mobile-nav'>
-    <a href='#about' class='nav-item'>About</a>
-    <a href='#speakers' class='nav-item'>Speakers</a>
-    <a href='#sponsor' class='nav-item'>Sponsor</a>
-    <a href='#faq' class='nav-item'>FAQ</a>
+    <a href="javascript:void(0);" id='close' class="mobile-icon" onclick="toggleMobileNav()">
+      <i class="fa fa-close stretch"></i>
+    </a>
+    <a href=''class='mobile-nav-item'></a>
+    <a href=''class='mobile-nav-item'></a>
+    <a href='#about' onclick="toggleMobileNav()" class='mobile-nav-item'>About</a>
+    <a href='#speakers' onclick="toggleMobileNav()" class='mobile-nav-item'>Speakers</a>
+    <a href='#sponsor' onclick="toggleMobileNav()" class='mobile-nav-item'>Sponsor</a>
+    <a href='#faq' onclick="toggleMobileNav()" class='mobile-nav-item'>FAQ</a>
   </div>
 
   <!-- Main content. -->
