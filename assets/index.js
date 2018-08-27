@@ -7,3 +7,13 @@ $(window).scroll(function() {
       $(".header").removeClass("lift");
   }
 });
+
+function showMobileNav() {
+    var x = document.getElementById("mobile-nav");
+    console.log('hello');
+    if (x.className === "mobile-nav") {
+        x.className += " show";
+    } else {
+        x.className = "mobile-nav";
+    }
+}

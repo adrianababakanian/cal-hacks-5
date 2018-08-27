@@ -86,6 +86,32 @@ body {
           body .header .nav .nav-item.apply:hover {
             background: #218BB6;
             color: #97D0ED; }
+      body .header .nav .icon {
+        font-size: 28px;
+        display: none; }
+        @media (max-width: 800px) {
+          body .header .nav .icon {
+            display: block; } }
+      body .header .nav .stretch {
+        height: 38px;
+        line-height: 38px; }
+  body .mobile-nav {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: #A8D9F1;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    body .mobile-nav.show {
+      display: block; }
+    body .mobile-nav .nav-item {
+      font-size: 16px;
+      color: #3B9BC2;
+      width: 100vw;
+      padding: 20px 0;
+      text-align: center; }
   body .container {
     width: 1000px;
     margin: 60px 0;

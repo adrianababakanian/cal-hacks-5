@@ -145,6 +145,40 @@ body {
           }
         }
       }
+      .icon {
+        font-size: 28px;
+        display: none;
+        @media (max-width: 800px) {
+          display: block;
+        }
+      }
+      .stretch {
+        height: 38px;
+        line-height: 38px;
+      }
+    }
+  }
+
+  .mobile-nav {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: get(background);
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &.show {
+      display: block;
+    }
+
+    .nav-item {
+      font-size: 16px;
+      color: get(oasis);
+      width: 100vw;
+      padding: 20px 0;
+      text-align: center;
     }
   }
 
