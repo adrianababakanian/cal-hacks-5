@@ -197,7 +197,7 @@ body {
 
     .mobile-nav-item {
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       color: get(oasis);
       width: 100vw;
@@ -338,7 +338,7 @@ body {
 
     p {
       font-family: Muli;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 26px;
       max-width: 475px;
@@ -474,7 +474,7 @@ body {
         background: get(french);
       }
       .name {
-        font-size: 18px;
+        font-size: 16px;
         padding: 12px 24px 2px 24px;
       }
       .about {
@@ -485,8 +485,15 @@ body {
   }
 
   #sponsor, #faq {
-    background: get(dust);
-    border-radius: 8px;
+    //background: get(dust);
+    background-image: url('./images/dust.png');
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: 920px) {
+      background-size: 100% 100%;
+    }
 
     p {
       max-width: 600px;
@@ -562,7 +569,7 @@ body {
 
     .faq-item {
       width: 100%;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 26px;
       padding: 20px 0;
       @media (max-width: breakpoint(medium)) {

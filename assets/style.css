@@ -23,7 +23,7 @@ body {
     align-self: flex-start;
     width: 10%;
     z-index: 10000; }
-    @media (max-width: 500px) {
+    @media (max-width: 800px) {
       body #mlh-trust-badge {
         padding: 0 0 0 12px; } }
   body .header {
@@ -125,7 +125,7 @@ body {
       right: 0; }
     body .mobile-nav .mobile-nav-item {
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       color: #3B9BC2;
       width: 100vw;
@@ -247,7 +247,7 @@ body {
       transition: padding 0.5s ease-in-out; }
     body .container p {
       font-family: Muli;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 26px;
       max-width: 475px;
@@ -352,14 +352,19 @@ body {
         height: 190px;
         background: #80C8DF; }
       body .carousel .tile .name {
-        font-size: 18px;
+        font-size: 16px;
         padding: 12px 24px 2px 24px; }
       body .carousel .tile .about {
         font-size: 14px;
         padding: 0 24px; }
   body #sponsor, body #faq {
-    background: #EDF6FA;
-    border-radius: 8px; }
+    background-image: url("./images/dust.png");
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media (max-width: 920px) {
+      body #sponsor, body #faq {
+        background-size: 100% 100%; } }
     body #sponsor p, body #faq p {
       max-width: 600px; }
     @media (max-width: 500px) {
@@ -416,7 +421,7 @@ body {
       margin-right: 30px; }
     body .faq-content .faq-item {
       width: 100%;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 26px;
       padding: 20px 0; }
       @media (max-width: 500px) {
